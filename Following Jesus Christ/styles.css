@@ -1,0 +1,794 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Header and Navigation */
+header {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo h1 {
+  color: #fff;
+  margin: 0;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Ensures menu items are displayed horizontally */
+}
+
+.menu li {
+  margin: 0 15px; /* Adds spacing between menu items */
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #4CAF50; /* Changes color on hover */
+}
+
+/* Full-screen Hero Section */
+.hero {
+  background-image: url('20395239.JPG'); /* Add your theme image here */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #45a049;
+}
+
+/* Bible Page Background Image */
+body.bible-page {
+  background-image: url('bible-image.jpeg'); /* Add your Bible background image here */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Makes the background fixed while scrolling */
+  color: #fff;
+}
+
+body.bible-page header {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent header for better contrast */
+}
+
+body.bible-page #bible {
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.bible-hero {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for better readability */
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.bible-hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.bible-hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+/* styles.css */
+
+/* Search Container */
+.search-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.search-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-container input[type="number"] {
+  width: 100px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-container button:hover {
+  background-color: #45a049;
+}
+
+/* Datalist Dropdown */
+datalist {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+/* Songs Page Background Image */
+body.songs-page {
+  background-image: url('song\ of\ songs.jpg'); /* Add your Songs background image here */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Makes the background fixed while scrolling */
+  color: #fff;
+}
+
+body.songs-page header {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent header for better contrast */
+}
+
+body.songs-page #songs {
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.songs-hero {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for better readability */
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.songs-hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.songs-hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.music-player {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the music player */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#audio-player {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+#playlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#playlist li {
+  margin: 10px 0;
+}
+
+#playlist li a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#playlist li a:hover {
+  color: #45a049;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.social-media a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #4CAF50;
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+#back-to-top:hover {
+  background: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column; /* Stack menu items vertically on small screens */
+    margin-top: 10px;
+  }
+
+  .menu li {
+    margin: 5px 0; /* Reduce spacing for stacked items */
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  iframe {
+    height: 300px;
+  }
+}
+/* Live Page Background Image */
+body.live-page {
+  background-image: url('Worship-Webpage-Banner-scaled.jpg'); /* Add your Live background image here */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Makes the background fixed while scrolling */
+  color: #fff;
+}
+
+body.live-page header {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent header for better contrast */
+}
+
+body.live-page #live {
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.live-hero {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for better readability */
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.live-hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.live-hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.video-container {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for Video */
+@media (max-width: 768px) {
+  .video-container iframe {
+    height: 300px;
+  }
+}
+/* About Page Background Image */
+body.about-page {
+  background-image: url('image-47.webp'); /* Add your About background image here */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Makes the background fixed while scrolling */
+  color: #fff;
+}
+
+body.about-page header {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent header for better contrast */
+}
+
+body.about-page #about {
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-hero {
+  background: rgba(163, 57, 57, 0.5); /* Semi-transparent overlay for better readability */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #08020e;
+  font-family: 'Georgia', serif; /* Elegant font */
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #e1ebef; /* Light gray for better readability */
+  line-height: 1.8;
+}
+
+.about-hero strong {
+  color: #4CAF50; /* Highlight important text */
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent footer for better contrast */
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.social-media a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #4CAF50;
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+#back-to-top:hover {
+  background: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column; /* Stack menu items vertically on small screens */
+    margin-top: 10px;
+  }
+
+  .menu li {
+    margin: 5px 0; /* Reduce spacing for stacked items */
+  }
+
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+}
+/* Contact Page Background Image */
+body.contact-page {
+  background-image: url('contact\ theme.jpeg'); /* Add your Contact background image here */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Makes the background fixed while scrolling */
+  color: #fff;
+  font-family: 'Cooper Black', serif; /* Cooper Black font */
+}
+
+body.contact-page header {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent header for better contrast */
+}
+
+body.contact-page #contact {
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-hero {
+  background: rgba(0, 0, 0, 0.42); /* Semi-transparent overlay for better readability */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #dfd6d9;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #efe199; /* Light gray for better readability */
+  line-height: 1.8;
+}
+
+.contact-form {
+  background: rgba(173, 108, 108, 0.8); /* Semi-transparent white background for the form */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Cooper Black', serif; /* Cooper Black font */
+}
+
+.contact-form textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+.contact-form button {
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #45a049;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent footer for better contrast */
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.social-media a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #4CAF50;
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+#back-to-top:hover {
+  background: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column; /* Stack menu items vertically on small screens */
+    margin-top: 10px;
+  }
+
+  .menu li {
+    margin: 5px 0; /* Reduce spacing for stacked items */
+  }
+
+  .contact-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-hero p {
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+}
+/* Careers Page Background Image */
+body.careers-page {
+  background-image: url('We\'re+hiring.png'); /* Add your Careers background image here */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Makes the background fixed while scrolling */
+  color: #fff;
+  font-family: 'Trixie Text', serif; /* Trixie font */
+}
+
+body.careers-page header {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent header for better contrast */
+}
+
+body.careers-page #careers {
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.careers-hero {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for better readability */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.careers-hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #fff;
+}
+
+.careers-hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #f0f0f0; /* Light gray for better readability */
+  line-height: 1.8;
+}
+
+.careers-form {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the form */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.careers-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.careers-form input,
+.careers-form textarea,
+.careers-form button,
+.careers-form file {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Trixie Text', serif; /* Trixie font */
+}
+
+.careers-form textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+.careers-form button {
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.careers-form button:hover {
+  background: #45a049;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent footer for better contrast */
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.social-media a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #4CAF50;
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+#back-to-top:hover {
+  background: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column; /* Stack menu items vertically on small screens */
+    margin-top: 10px;
+  }
+
+  .menu li {
+    margin: 5px 0; /* Reduce spacing for stacked items */
+  }
+
+  .careers-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .careers-hero p {
+    font-size: 1rem;
+  }
+
+  .careers-form {
+    padding: 1rem;
+  }
+}
